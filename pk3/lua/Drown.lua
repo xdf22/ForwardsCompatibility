@@ -10,7 +10,7 @@ A,
  
 addHook("ThinkFrame", function()
 for player in players.iterate
-if ((player.mo and player.mo.skin == "sonic")
+if player.mo
 	and (player.mo.state == S_PLAY_DIE)
 	and (player.mo.eflags & MFE_UNDERWATER)
 	and player.powers[pw_underwater] <= 0)
