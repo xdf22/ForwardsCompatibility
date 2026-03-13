@@ -13,7 +13,7 @@ local spr2togglecvar = CV_RegisterVar({
 
 addHook("ThinkFrame", function()
 for player in players.iterate
-if cv_spr2toggle == 0
+if CV_FindVar(cv_spr2toggle).value == 0
 	return
 end
 // Stand
